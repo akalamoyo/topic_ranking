@@ -68,7 +68,7 @@ class NLP(object):
         #print(self.sorted_results)
         return self.sorted_results
 
-@app.route("/get_input", methods = ['GET','POST'])
+@app.route("/", methods = ['GET','POST'])
 def get_input():
     global result
     if request.method == 'GET':
@@ -82,13 +82,9 @@ def get_input():
         js =json.dumps({'Output':x.output()})
         print(js)
         return render_template('input_text2.html', out = js)
-@app.route("/output", methods = ['GET','POST'])
-def output():
-    print(request.form.get())
-    return js
 
 if __name__=='__main__':
-    app.run(host='127.0.0.1', port=80)
+    app.run(host='0.0.0.0', port=80)
 
 
 
