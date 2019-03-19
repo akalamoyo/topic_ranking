@@ -1,0 +1,7 @@
+Dresses:dress,size,shirt,jeans,material,cotton,cap,long,medium,large,small
+Cars:model,milleage,brand,transmission,hatchback,wheel,price
+House:location,detachable,room,heating,rent,busstop,price,furnish
+Gadget:laptop,phones,electronic,power,screen,connection,battery,size
+
+
+
