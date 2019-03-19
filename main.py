@@ -75,12 +75,10 @@ def get_input():
         return render_template('input_text2.html')
     if request.method == 'POST':
         result = request.form.get('textfield')
-        print(result)
         x = NLP()
         x.similarity()
         x.output()
         js =json.dumps({'Output':x.output()})
-        print(js)
         return render_template('input_text2.html', out = js)
 
 if __name__=='__main__':
