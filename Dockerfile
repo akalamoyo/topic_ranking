@@ -10,7 +10,7 @@ ADD . /app
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-RUN python -m nltk.downloader all
+RUN python -c "import nltk; nltk.download('punkt')"
 
 EXPOSE 80
 
