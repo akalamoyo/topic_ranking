@@ -10,6 +10,8 @@ ADD . /app
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
+RUN python -m nltk.downloader all
+
 EXPOSE 80
 
 ENV NAME World
